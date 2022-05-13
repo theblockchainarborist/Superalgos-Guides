@@ -176,6 +176,12 @@ __5.  Time to clone Superalgos and install it!__
  	     ```
 	     git status
 	     ```
+	- 5.7 Configure git:
+		 ```
+		 sudo git config --global user.name "yourGithubUserNameHere"
+		 ```
+		 ```
+		 sudo git config --global user.email "yourGithubUserEmailHere"
 	  
 __6. Set up docker image:__
   - _(The "-d" In the docker run command allows the container to run in the background and you to be able to reuse the terminal)_
