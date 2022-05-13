@@ -105,42 +105,42 @@ __4. Now lets install docker__
 
 
 	- 4.1 Update:
-   	 ```
-	 sudo apt-get update
-	 ```
-	 ```
-	 sudo apt-get install \
-         ca-certificates \
-         curl \
-         gnupg \
-         lsb-release
-	 ```
+ 	     ```
+	     sudo apt-get update
+	     ```
+	     ```
+	     sudo apt-get install \
+	     ca-certificates \
+	     curl \
+	     gnupg \
+	     lsb-release
+	     ```
 
 	- 4.2 Add GPG key:
-	 ```
-	 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-	 ```
+ 	     ```
+	     curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+	     ```
 
 
 	 - 4.3 Set up the "stable" repo:
-	  ```
-          echo \
-          "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
-          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
-	  ```
+ 	     ```
+	     echo \
+	     "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+	     $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+	     ```
 	  
 	 - 4.4 Install Docker Engine:
-	  ```
-	  sudo apt-get update
-	  ```
-	  ```
-	  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-	  ```
+ 	     ```
+	     sudo apt-get update
+	     ```
+	     ```
+	     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+	     ```
 
 	 - 4.5  Reboot again:
-	  ```
-	  sudo reboot
-	  ```
+ 	     ```
+	     sudo reboot
+	     ```
 
 
 __5.  Time to clone Superalgos and install it!__
@@ -148,33 +148,34 @@ __5.  Time to clone Superalgos and install it!__
   - _Just the usual setup steps!_
   
 	- 5.1 Clone your fork as usual:
-	 ```
-	  git clone yourGitForkURL
-	 ```
+ 	     ```
+	     git clone yourGitForkURL
+	     ```
 	- 5.2 Now cd into Superalgos:
-	 ```
-	  cd Superalgos
-	 ```
+ 	     ```
+	     cd Superalgos
+	     ```
 	  
 	- 5.3 Run node setup:
-	 ```
-	  node setup
-	 ```
+ 	     ```
+	     node setup
+	     ```
 
 	- 5.4 Run node setupPlugins:
 	  - _(I give repo, workflow & write permission to token)_
+	  <br>
 	  
-	 ```
-	  node setupPlugins yourGitName yourRepoKey
-	 ```
+ 	   ```
+	   node setupPlugins yourGitName yourRepoKey
+	   ```
 	- 5.5 Change branches:
-	 ```
-	  git checkout develop
-	 ```
+ 	     ```
+	     git checkout develop
+	     ```
 	- 5.6 Check everythings OK:
-	 ```
-	  git status
-	 ```
+ 	     ```
+	     git status
+	     ```
 	  
 __6. Set up docker image:__
   - _(The "-d" In the docker run command allows the container to run in the background and you to be able to reuse the terminal)_
@@ -206,30 +207,28 @@ __7. Run Superalgos__
         ```
 
 __8.  Any errors updating Superalgos?__
-
-                        Open Doc's tab and run "app.update"
-                        Open Bitcoin-Factory workspace.
+  - _(Start with the first fix then try to find a picture that match's your error output at the console)_
+    - 8.1 Open up the Doc's tab and update:
+      ```
+      app.update
+      ```
+     - 8.2 Open Bitcoin-Factory workspace:
+       ```
+       Error appears (See Error Picture 1 & 2)
+       ```
 			
-                        Error appears (Error1)
-			
-1. Picture from terminal of Error_1
+- Error Picture 1 _(Console Output)_
 
+  ![image](https://raw.githubusercontent.com/theblockchainarborist/Superalgos-Guides/main/Error%20Pictures/Error_1.png)
 
-	![Error1](https://raw.githubusercontent.com/theblockchainarborist/Superalgos-Guides/main/Error%20Pictures/Error_1.png)
+- Error Picture 2 _(Contribution tab view)_
 
+  ![image](https://github.com/theblockchainarborist/Superalgos-Guides/blob/main/Error%20Pictures/Error_2.png?raw=true)
+	
 
-
-				
-
-  9. Also see following picture of error shown in contribute tab before fix.
-    ![Error 2](![image](https://github.com/theblockchainarborist/Superalgos-Guides/blob/main/Error%20Pictures/Error_2.png?raw=true)
-
-					
-					
-
-                        Open contributions tab- click "Reset"
-                        Open Workspaces tab, then Bitcoin-Factory Workspace (again to test)
-                                    Works!
+Open contributions tab- click "Reset"
+Open Workspaces tab, then Bitcoin-Factory Workspace (again to test)
+Works!
 
                         
 
