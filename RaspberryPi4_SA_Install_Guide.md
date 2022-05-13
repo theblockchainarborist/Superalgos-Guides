@@ -147,66 +147,64 @@ __5.  Time to clone Superalgos and install it!__
   - _Just the usual setup steps!_
   
 	- 5.1 Clone your fork as usual:
-	  ```
+	 ```
 	  git clone yourGitForkURL
-	  ```
+	 ```
 	- 5.2 Now cd into Superalgos:
-	  ```
+	 ```
 	  cd Superalgos
-	  ```
+	 ```
 	  
 	- 5.3 Run node setup:
-	  ```
+	 ```
 	  node setup
-	  ```
+	 ```
 
 	- 5.4 Run node setupPlugins:
 	  - _(I give repo, workflow & write permission to token)_
 	  
-	  ```
+	 ```
 	  node setupPlugins yourGitName yourRepoKey
-	  ```
+	 ```
 	- 5.5 Change branches:
-	  ```
+	 ```
 	  git checkout develop
-	  ```
+	 ```
 	- 5.6 Check everythings OK:
-	  ```
+	 ```
 	  git status
-	  ```
+	 ```
 	  
+__6. Set up docker image:__
+  - _(The "-d" In the docker run command allows the container to run in the background and you to be able to reuse the terminal)_
+  - _(For first setup / Troubleshooting it is recommended to omit the "-d" and use 2 consoles to run both Superalgos & Docker)_
+  
+    - 6.1 Move to the ArmDockerBuild file:
+      ```
+      cd Bitcoin-Factory
+      ```
+      ```
+      cd ArmDockerBuild
+      ```
+      
+    - 6.2 Build the docker container:
+      ```
+      sudo docker build -t bitcoin-factory-machine-learning .
+      ```
+    - 6.3 Run the Docker Container:
+      ```
+      sudo docker run -d -it --rm --shm-size=4.37gb --name Bitcoin-Factory-ML -v ~/Superalgos/Bitcoin-Factory/Test-Client/notebooks:/tf/notebooks -p 8888:8888 bitcoin-factory-machine-learning
+      ```
 
-6. Set up docker image:
+__7. Run Superalgos__ 
+   - _(sudo is needed for Bitcoin Factory)_
+   
+      - Run node platform command:
+        ```
+        sudo node platform minMemo noBrowser
+        ```
 
-        6.1 Move to the ArmDockerBuild file:
-
-                                        cd Bitcoin-Factory
-
-                                        cd ArmDockerBuild
-
-
-        6.2 Build the docker container:
-
-                                        sudo docker build -t bitcoin-factory-machine-learning .
-
-
-        6.3 Run the Docker Container:   (Copy paste all below at once)
-
-                                        sudo docker run -d -it --rm --shm-size=4.37gb --name Bitcoin-Factory-ML -v ~/Superalgos/Bitcoin-Factory/Test-Client/notebooks:/tf/notebooks -p 8888:8888 bitcoin-factory-machine-learning		
-
-                                        
-						(the -d in the above command lets docker stay running when terminal is closed)
-
-
-
-7. Run Superalgos. 
-    (sudo is needed for Bitcoin Factory)
-        
-                                        sudo node platform minMemo noBrowser
-
-
-
-5.  Any errors updating Superalgos?
+__8.  Any errors updating Superalgos?__
 
                         Open Doc's tab and run "app.update"
                         Open Bitcoin-Factory workspace.
