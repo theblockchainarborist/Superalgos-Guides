@@ -129,17 +129,17 @@ __4. Now lets install docker__
 	  ```
 	  
 	 - 4.4 Install Docker Engine:
-	   ```
-	   sudo apt-get update
-	   ```
-	   ```
-	   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-	   ```
+	  ```
+	  sudo apt-get update
+	  ```
+	  ```
+	  sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+	  ```
 
 	 - 4.5  Reboot again:
-	   ```
-	   sudo reboot
-	   ```
+	  ```
+	  sudo reboot
+	  ```
 
 
 5.  Time to clone Superalgos and install it!
