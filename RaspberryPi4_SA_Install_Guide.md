@@ -226,18 +226,22 @@ __8.  Any errors updating Superalgos?__
   ![image](https://github.com/theblockchainarborist/Superalgos-Guides/blob/main/Error%20Pictures/Error_2.png?raw=true)
 	
 
-Open contributions tab- click "Reset"
-Open Workspaces tab, then Bitcoin-Factory Workspace (again to test)
-Works!
+  - Open contributions tab- click "Reset"
+  - Open Workspaces tab, then Bitcoin-Factory Workspace (again to test)
+   - Fixed!         
 
-                        
 
 
   *  ********************************************************************************************
-  *  Everything all check out? Any problems the above does not solve when following this guide, *
-  *  please let me know so I can add solutions in!                                              *
+ - __Everything all check out? Any problems the above does not solve when following this guide?__
+    
+ - __Please let me know so I can add solutions in!__                                              
   *********************************************************************************************** 
 
 
-      _________________________________________________________|_END SETUP_|________________________________________________________
+
+
+      _________________________________________________________|__END SETUP__|________________________________________________________
+
+
 
