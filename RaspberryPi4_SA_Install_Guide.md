@@ -142,31 +142,39 @@ __4. Now lets install docker__
 	  ```
 
 
-5.  Time to clone Superalgos and install it!
+__5.  Time to clone Superalgos and install it!__
 
-        5.1 Clone your fork as usual:
-        
-                                        git clone yourGitForkURL
+  - _Just the usual setup steps!_
+  
+	- 5.1 Clone your fork as usual:
+	  ```
+	  git clone yourGitForkURL
+	  ```
+	- 5.2 Now cd into Superalgos:
+	  ```
+	  cd Superalgos
+	  ```
+	  
+	- 5.3 Run node setup:
+	  ```
+	  node setup
+	  ```
 
-        5.2 Now cd into Superalgos:
-                                        cd Superalgos
-
-        5.3 Run node setup:
-                                        node setup    
-
-        5.4 Run node setupPlugins:
-        (I give repo, workflow,          node setupPlugins yourGitName yourRepoKey
-            & write permissions
-            to token)
-    
-
-        5.5 Change branches:
-                                        git checkout develop
-
-        5.6 Check everythings OK:
-                                        git status
-
-
+	- 5.4 Run node setupPlugins:
+	  - _(I give repo, workflow & write permission to token)_
+	  
+	  ```
+	  node setupPlugins yourGitName yourRepoKey
+	  ```
+	- 5.5 Change branches:
+	  ```
+	  git checkout develop
+	  ```
+	- 5.6 Check everythings OK:
+	  ```
+	  git status
+	  ```
+	  
 
 6. Set up docker image:
 
