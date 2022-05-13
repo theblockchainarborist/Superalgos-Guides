@@ -6,15 +6,16 @@
 
 
 
-    Image flashed on micro SD card by Raspberry Pi Imager:      version: 1.7.2
+    		Image flashed on micro SD card by Raspberry Pi Imager:      version: 1.7.2
 
 
     
-******************************************************
-    Image used:
-                Raspberry Pi OS Lite (64 bit)
-                release 2022-04-04
-******************************************************
+Image used:
+    		
+             -   Raspberry Pi OS Lite (64 bit)
+             -   release 2022-04-04
+		
+
 
 
 
