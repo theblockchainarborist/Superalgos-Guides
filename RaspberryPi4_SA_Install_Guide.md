@@ -34,25 +34,27 @@ __2.  Time for first boot!__
 - _This may take a few minutes... I used the pi connected to a monitor at this point._        
 
     - 2.1 After boot up finishes run following command to find local Ip address of your pi:
-    	
-          	ifconfig        
-	
+    	  
+          ifconfig
+	  
 
-     - 2.2 Then SSH into the pi:
-     	   
-           	sudo apt-get update
-		
+    - 2.2 Then SSH into the pi:
+
+	   ```     	   
+	   sudo apt-get update
 	   ```
-           	sudo apt-get upgrade
-
+	   ``` 
+	   sudo apt-get upgrade
+	   ```	   
+		
      - 2.3 Add user to sudo group: 
  
      	    
-           	sudo su
-		```
-           	usermod -aG sudo yourPcUsername
-		```
-           	sudo reboot
+           sudo su
+	   ```
+	   usermod -aG sudo yourPcUsername
+	   ```
+           sudo reboot
 
 
        _(After each reboot SSH back into the Pi)_   
@@ -60,26 +62,27 @@ __2.  Time for first boot!__
 
                                     
 
-3.  Now lets install pre-requisites.
+__3.  Now lets install pre-requisites__
 
-            (From where I land after SSH'ing into the pi again is where Superalgos is installed)
+  - _(From where I land after SSH'ing into the pi again is where Superalgos is installed)_
 
-
-        3.1 First lets install git.
-                                        sudo apt-get install git
-
-
-
-        3.2 Now lets install node.js.
-                                        curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
-
-                                        sudo apt-get install -y nodejs
+      - 3.1 First lets install git:
+      
+            sudo apt-get install git
 
 
 
-        3.3 Check your installs.
-                                    node --version
-                                    npm --version
+       - 3.2 Now lets install node.js:
+       
+             curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+
+             sudo apt-get install -y nodejs
+
+
+
+        - 3.3 Check your installs:
+              node --version
+              npm --version
 
 
                    ********************
