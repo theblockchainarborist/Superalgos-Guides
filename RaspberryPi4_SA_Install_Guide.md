@@ -1,12 +1,9 @@
-
-                ________________________________________________________________________________
-               |                                                                                |
-               | Raspberry pi 4 (8gb) Superalgos setup + Bitcoin-Factory machine learning setup |
-               |________________________________________________________________________________|
+__Raspberry pi 4 (8gb) Superalgos setup + Bitcoin-Factory machine learning setup__
+               
 
 
 
-    		Image flashed on micro SD card by Raspberry Pi Imager:      version: 1.7.2
+	Image flashed on micro SD card by Raspberry Pi Imager:      version: 1.7.2
 
 
     
@@ -19,7 +16,7 @@ Image used:
 
 
 
-- [ ] 1. Flash the above OS onto your micro SD using Raspberry Pi Imager.
+__1. Flash the above OS onto your micro SD using Raspberry Pi Imager__
 
         1.1 Select the correct Operating System.
         1.2 Select your micro SD card from the list of Storage devices.
@@ -33,10 +30,13 @@ Image used:
 
 
 
-2.  Time for first boot! This may take a few minutes... I used the pi connected to a monitor at this point.        
+__2.  Time for first boot!__	 
+- _This may take a few minutes... I used the pi connected to a monitor at this point._        
 
-    2.1 After boot up finishes:
-                                        ifconfig        (to find the local ip address)
+    	2.1 After boot up finishes:
+    	```
+        ifconfig        (to find the local ip address)
+	```
 
         2.2 Then SSH into the pi:
                                         sudo apt-get update
