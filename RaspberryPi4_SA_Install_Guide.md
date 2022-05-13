@@ -1,32 +1,33 @@
 __Raspberry pi 4 (8gb) Superalgos setup + Bitcoin-Factory machine learning setup__
-               
-
-
-
-	Image flashed on micro SD card by Raspberry Pi Imager:      version: 1.7.2
-
-
-    
+	
+Image flashed on micro SD card with:
+	  ```
+	  Raspberry Pi Imager:      version: 1.7.2
+	  ```
+	
+	
 Image used:
-    		
-             -   Raspberry Pi OS Lite (64 bit)
-             -   release 2022-04-04
+	   ```
+	   Raspberry Pi OS Lite (64 bit)
+	   release 2022-04-04
+	   ```
 		
 
 
 
 
 __1. Flash the above OS onto your micro SD using Raspberry Pi Imager__
-
-        1.1 Select the correct Operating System.
-        1.2 Select your micro SD card from the list of Storage devices.
-        1.3 Click the settings button at the bottom right.
-                Set Hostname, 
-                enable SSH (if you want to use SSH), 
-                Set username/Password, 
-                Configure wireless LAN if needed.
-
-        1.4 Write the image to the micro SD.
+  - _(Just the regular raspberry pi Imager setup)_
+    - 1.1 Select the correct Operating System.
+    - 1.2 Select your micro SD card from the list of Storage devices.
+    - 1.3 Click the settings button at the bottom right.
+    	```
+	  Set Hostname,
+	  enable SSH (if you want to use SSH),
+	  Set username/Password,
+	  Configure wireless LAN if needed.
+	  
+     - 1.4 Write the image to the micro SD.
 
 
 
