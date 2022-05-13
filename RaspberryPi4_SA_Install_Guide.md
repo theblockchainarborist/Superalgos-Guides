@@ -119,8 +119,10 @@
                                     sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
 
 
-        4.5 Reboot again:
-				                    sudo reboot
+    4.5  Reboot again:
+    				    sudo reboot
+						    
+						    
 
 
 5.  Time to clone Superalgos and install it!
@@ -168,7 +170,7 @@
                                         sudo docker run -d -it --rm --shm-size=4.37gb --name Bitcoin-Factory-ML -v ~/Superalgos/Bitcoin-Factory/Test-Client/notebooks:/tf/notebooks -p 8888:8888 bitcoin-factory-machine-learning		
 
                                         
-				(the -d in the above command lets docker stay running when terminal is closed)
+						(the -d in the above command lets docker stay running when terminal is closed)
 
 
 
@@ -195,11 +197,14 @@
 
 				
 
-                                Also see following picture of error shown in contribute tab before fix.
-                                        ![Error 2](https://imgur.com/a/D3ZNRiX)
+  9. Also see following picture of error shown in contribute tab before fix.
+    ![Error 2](![image](https://github.com/theblockchainarborist/Superalgos-Guides/blob/main/Error%20Pictures/Error_2.png?raw=true)
 
-                        Open contributions tab- click reset.
-                        Workspaces-> Bitcoin-Factory (again to test)
+					
+					
+
+                        Open contributions tab- click "Reset"
+                        Open Workspaces tab, then Bitcoin-Factory Workspace (again to test)
                                     Works!
 
                         
@@ -211,6 +216,5 @@
   *********************************************************************************************** 
 
 
-                                 _____________
-_________________________________|_END SETUP_|_______________________________________________________________________
+      _________________________________________________________|_END SETUP_|________________________________________________________
 
