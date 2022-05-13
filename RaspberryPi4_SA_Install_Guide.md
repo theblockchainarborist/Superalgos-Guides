@@ -73,16 +73,20 @@ __3.  Now lets install pre-requisites__
 
 
        - 3.2 Now lets install node.js:
-       
-             curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+       	     
+	     curl -fsSL https://deb.nodesource.com/setup_17.x | sudo -E bash -
+	     ```
+	     sudo apt-get install -y nodejs
+	     ```
 
-             sudo apt-get install -y nodejs
 
-
-
-        - 3.3 Check your installs:
-              node --version
-              npm --version
+       - 3.3 Check your installs:
+ 	     ```
+ 	     node --version
+	     ```
+	     ```
+	     npm --version
+	     ```
 
 
                    ********************
@@ -94,43 +98,48 @@ __3.  Now lets install pre-requisites__
         
 
 
-    4. Now lets install docker.
-
-                        (The following commands are taken from docs.docker.com)
+__4. Now lets install docker__
+  - _(The following commands are taken from docs.docker.com)_
             (URL = "https://docs.docker.com/engine/install/debian/#install-using-the-repository")
 
 
-        4.1 Update:
-                                    sudo apt-get update 
+	- 4.1 Update:
+   	 ```
+	 sudo apt-get update
+	 ```
+	 ```
+	 sudo apt-get install \
+         ca-certificates \
+         curl \
+         gnupg \
+         lsb-release
+	 ```
 
-                                    sudo apt-get install \
-                                        ca-certificates \
-                                        curl \
-                                        gnupg \
-                                        lsb-release
-
-        4.2 Add GPG key:
-                                    curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
-
-
-        4.3 Set up the "stable" repo:       (copy paste all below text at once)
-
-                                    echo \
-                            "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
-                            $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+	- 4.2 Add GPG key:
+	 ```
+	 curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg
+	 ```
 
 
-        
-        4.4 Install Docker Engine:
+	 - 4.3 Set up the "stable" repo:
+	  ```
+          echo \
+          "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/debian \
+          $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+	  ```
+	  
+	 - 4.4 Install Docker Engine:
+	   ```
+	   sudo apt-get update
+	   ```
+	   ```
+	   sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+	   ```
 
-                                    sudo apt-get update
-                                    sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
-
-
-    4.5  Reboot again:
-    				    sudo reboot
-						    
-						    
+	 - 4.5  Reboot again:
+	   ```
+	   sudo reboot
+	   ```
 
 
 5.  Time to clone Superalgos and install it!
