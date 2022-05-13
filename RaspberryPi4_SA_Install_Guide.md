@@ -183,7 +183,17 @@
 
                         Open Doc's tab and run "app.update"
                         Open Bitcoin-Factory workspace.
-                                Error appears. Matching Error ![Error 1](https://imgur.com/a/D3ZNRiX)
+			
+                        Error appears (Error1)
+			
+1. Picture from terminal of Error_1
+
+
+	![Error1](https://raw.githubusercontent.com/theblockchainarborist/Superalgos-Guides/main/Error%20Pictures/Error_1.png)
+
+
+
+				
 
                                 Also see following picture of error shown in contribute tab before fix.
                                         ![Error 2](https://imgur.com/a/D3ZNRiX)
