@@ -19,7 +19,7 @@ Image used:
 
 
 
-1. Flash the above OS onto your micro SD using Raspberry Pi Imager.
+- [ ] 1. Flash the above OS onto your micro SD using Raspberry Pi Imager.
 
         1.1 Select the correct Operating System.
         1.2 Select your micro SD card from the list of Storage devices.
