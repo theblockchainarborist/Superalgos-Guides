@@ -33,26 +33,30 @@ __1. Flash the above OS onto your micro SD using Raspberry Pi Imager__
 __2.  Time for first boot!__	 
 - _This may take a few minutes... I used the pi connected to a monitor at this point._        
 
-    	2.1 After boot up finishes:
-    	```
-        ifconfig        (to find the local ip address)
-	```
+    - 2.1 After boot up finishes run following command to find local Ip address of your pi:
+    	
+          	ifconfig        
+	
 
-        2.2 Then SSH into the pi:
-                                        sudo apt-get update
+     - 2.2 Then SSH into the pi:
+     	   
+           	sudo apt-get update
+		
+	   ```
+           	sudo apt-get upgrade
 
-                                        sudo apt-get upgrade
+     - 2.3 Add user to sudo group: 
+ 
+     	    
+           	sudo su
+		```
+           	usermod -aG sudo yourPcUsername
+		```
+           	sudo reboot
 
 
-		2.3 Add user to sudo group: 
-                                    	sudo su
-
-                                    	usermod -aG sudo yourPcUsername
-
-                                    	sudo reboot
-
-
-                    (After each reboot SSH back into the Pi)        
+       _(After each reboot SSH back into the Pi)_   
+       
 
                                     
 
