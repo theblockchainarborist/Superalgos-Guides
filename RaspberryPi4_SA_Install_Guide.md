@@ -1,4 +1,4 @@
-__Raspberry pi 4 (8gb) Superalgos setup + Bitcoin-Factory machine learning setup__
+# __Raspberry pi 4 (8gb) Superalgos setup + Bitcoin-Factory ML setup__
 	
 Image flashed on micro SD card with:
 	  ```
