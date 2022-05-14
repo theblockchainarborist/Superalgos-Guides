@@ -11,12 +11,13 @@ Image used:
 	   Raspberry Pi OS Lite (64 bit)
 	   release 2022-04-04
 	   ```
+	   
 		
 
 
 
 
-__1. Flash the above OS onto your micro SD using Raspberry Pi Imager__
+### __1. Flash the above OS onto your micro SD using Raspberry Pi Imager__
   - _(Just the regular raspberry pi Imager setup)_
     - 1.1 Select the correct Operating System.
     - 1.2 Select your micro SD card from the list of Storage devices.
@@ -31,7 +32,7 @@ __1. Flash the above OS onto your micro SD using Raspberry Pi Imager__
 
 
 
-__2.  Time for first boot!__	 
+### __2.  Time for first boot!__	 
 - _This may take a few minutes... I used the pi connected to a monitor at this point._        
 
     - 2.1 After boot up finishes run following command to find local Ip address of your pi:
@@ -63,7 +64,7 @@ __2.  Time for first boot!__
 
                                     
 
-__3.  Now lets install pre-requisites__
+### __3.  Now lets install pre-requisites__
 
   - _(From where I land after SSH'ing into the pi again is where Superalgos is installed)_
 
@@ -99,10 +100,8 @@ __3.  Now lets install pre-requisites__
         
 
 
-__4. Now lets install docker__
-  - _(The following commands are taken from docs.docker.com)_
-            (URL = "https://docs.docker.com/engine/install/debian/#install-using-the-repository")
-
+### __4. Now lets install docker__
+  - _(The following commands are taken from [docs.docker.com](https://docs.docker.com/engine/install/debian/#installation-methods))_
 
 	- 4.1 Update:
  	     ```
@@ -143,7 +142,7 @@ __4. Now lets install docker__
 	     ```
 
 
-__5.  Time to clone Superalgos and install it!__
+### __5.  Time to clone Superalgos and install it!__
 
   - _Just the usual setup steps!_
   
@@ -183,7 +182,7 @@ __5.  Time to clone Superalgos and install it!__
 		 ```
 		 sudo git config --global user.email "yourGithubUserEmailHere"
 	  
-__6. Set up docker image:__
+### __6. Set up docker image:__
   - _(The "-d" In the docker run command allows the container to run in the background and you to be able to reuse the terminal)_
   - _(For first setup / Troubleshooting it is recommended to omit the "-d" and use 2 consoles to run both Superalgos & Docker)_
   
@@ -199,12 +198,14 @@ __6. Set up docker image:__
       ```
       sudo docker build -t bitcoin-factory-machine-learning .
       ```
+  - _NOTE: If above build command fails try using the Convenience Script found [HERE](https://docs.docker.com/engine/install/debian/#install-using-the-convenience-script)_
+  
     - 6.3 Run the Docker Container:
       ```
       sudo docker run -d -it --rm --shm-size=4.37gb --name Bitcoin-Factory-ML -v ~/Superalgos/Bitcoin-Factory/Test-Client/notebooks:/tf/notebooks -p 8888:8888 bitcoin-factory-machine-learning
       ```
 
-__7. Run Superalgos__ 
+### __7. Run Superalgos__ 
    - _(sudo is needed for Bitcoin Factory)_
    
       - Run node platform command:
@@ -212,7 +213,7 @@ __7. Run Superalgos__
         sudo node platform minMemo noBrowser
         ```
 
-__8.  Any errors updating Superalgos?__
+### __8.  Any errors updating Superalgos?__
   - _(Start with the first fix then try to find a picture that match's your error output at the console)_
     - 8.1 Open up the Doc's tab and update:
       ```
