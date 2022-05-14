@@ -1,21 +1,16 @@
-# __Raspberry pi 4 (8gb) Superalgos setup + Bitcoin-Factory ML setup__
+# __Raspberry pi 4 Superalgos Setup + Bitcoin-Factory ML Setup__
 	
-Image flashed on micro SD card with:
-	  ```
-	  Raspberry Pi Imager:      version: 1.7.2
-	  ```
-	
-	
-Image used:
-	   ```
-	   Raspberry Pi OS Lite (64 bit)
-	   release 2022-04-04
-	   ```
-	   
-		
+**Image flashed on micro SD card with:** `Raspberry Pi Imager:      version: 1.7.2`
 
 
+**Image used:** `Raspberry Pi OS Lite (64 bit) release 2022-04-04`
 
+#### _Verified and tested versions:_
+$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$`Raspberry Pi OS Lite (64 bit)`
+ <br>
+$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$`Raspberry Pi OS (64 bit)`
+
+***
 
 ### __1. Flash the above OS onto your micro SD using Raspberry Pi Imager__
   - _(Just the regular raspberry pi Imager setup)_
@@ -161,8 +156,7 @@ Image used:
 	     ```
 
 	- 5.4 Run node setupPlugins:
-	  - _(I give repo, workflow & write permission to token)_
-	  <br>
+	  - _Follow steps found [Here](https://github.com/Superalgos/Superalgos#two-get-your-githubcom-personal-access-token) to set up your github token!_
 	  
  	   ```
 	   node setupPlugins yourGitName yourRepoKey
@@ -239,16 +233,17 @@ Image used:
 
 
 
-  *  ********************************************************************************************
+***
  - __Everything all check out? Any problems the above does not solve when following this guide?__
     
  - __Please let me know so I can add solutions in!__                                              
-  *********************************************************************************************** 
+  ***
 
 
 
 
-      _________________________________________________________|__END SETUP__|________________________________________________________
+      							|__END SETUP__|
+								  
 
 
 
