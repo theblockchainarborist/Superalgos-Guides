@@ -5,10 +5,11 @@
 
 **Image used:** `Raspberry Pi OS Lite (64 bit) release 2022-04-04`
 
-#### _Verified and tested versions:_
-$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$`Raspberry Pi OS Lite (64 bit)`
- <br>
-$~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~$`Raspberry Pi OS (64 bit)`
+#### _Verified and tested versions:_ <br> 
+&nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;
+`Raspberry Pi OS Lite (64 bit)`<br>
+&nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp; &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;   &nbsp;   &nbsp;   &nbsp;  &nbsp;
+`Raspberry Pi OS (64 bit)`
 
 ***
 
