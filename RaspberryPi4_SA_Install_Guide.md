@@ -206,7 +206,7 @@
 
 ### __7. Run Superalgos__ 
    
-      - Run node platform command:
+   - Run node platform command:
         ```
         node platform minMemo noBrowser
         ```
