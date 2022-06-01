@@ -181,7 +181,11 @@
   - _(The "-d" In the docker run command allows the container to run in the background and you to be able to reuse the terminal)_
   - _(For first setup / Troubleshooting it is recommended to omit the "-d" and use 2 consoles to run both Superalgos & Docker)_
   
-    - 6.1 Move to the ArmDockerBuild file:
+    - 6.1 Add user to docker group
+      ```
+      sudo usermod -aG docker yourPcUserName
+      ```
+    - 6.2 Move to the ArmDockerBuild file:
       ```
       cd Bitcoin-Factory
       ```
@@ -189,23 +193,22 @@
       cd ArmDockerBuild
       ```
       
-    - 6.2 Build the docker container:
+    - 6.3 Build the docker container:
       ```
       sudo docker build -t bitcoin-factory-machine-learning .
       ```
   - _NOTE: If above build command fails try using the Convenience Script found [HERE](https://docs.docker.com/engine/install/debian/#install-using-the-convenience-script)_
   
-    - 6.3 Run the Docker Container:
+    - 6.4 Run the Docker Container:
       ```
       sudo docker run -d -it --rm --shm-size=4.37gb --name Bitcoin-Factory-ML -v ~/Superalgos/Bitcoin-Factory/Test-Client/notebooks:/tf/notebooks -p 8888:8888 bitcoin-factory-machine-learning
       ```
 
 ### __7. Run Superalgos__ 
-   - _(sudo is needed for Bitcoin Factory)_
    
       - Run node platform command:
         ```
-        sudo node platform minMemo noBrowser
+        node platform minMemo noBrowser
         ```
 
 ### __8.  Any errors updating Superalgos?__
